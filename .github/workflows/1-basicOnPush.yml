@@ -1,5 +1,5 @@
-name: Template basico
-run-name: Rodando ${{github.Actions}}
+name: Push template basico
+run-name: Rodando ${{github.event_name}}
 on: [push]
 jobs:
   aoenviar:
