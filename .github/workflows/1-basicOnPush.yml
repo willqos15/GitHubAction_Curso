@@ -1,0 +1,10 @@
+name: Template basico
+run-name: Rodando ${{github.Actions}}
+on: [push]
+  jobs:
+    aoenviar:
+      runs-on: ubuntu-latest
+      steps:
+        -name: Comentário
+        run: echo "comentário básico de push do workflow"
+
