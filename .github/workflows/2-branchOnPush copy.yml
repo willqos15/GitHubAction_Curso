@@ -1,9 +1,9 @@
-name: Push template basico
-run-name: Rodando ${{github.event_name}}
+name: Push template branch
+run-name: Rodando ${{github.event_name}} branch
 on:
   push:
     branches:
-      - develop
+      - main
 jobs:
   aoenviar:
     runs-on: ubuntu-latest
