@@ -5,7 +5,7 @@ on:
     branches:
       - main
 jobs:
-  aoenviar:
+  branchok:
     runs-on: ubuntu-latest
     steps:
       - name: Comentário
