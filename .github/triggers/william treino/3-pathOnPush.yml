@@ -1,5 +1,5 @@
 name: Path on Push
-run-name: Rodando na ${{github.event_name}} branch Path
+run-name: Rodando ${{github.event_name}} branch Path
 on: 
   push:
     paths: 
