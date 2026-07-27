@@ -1,0 +1,16 @@
+name: "Workflow Dispatch String"
+run-name: "Rodando - ${{github.event_name}}"
+on:
+  workflow_dispatch:
+    inputs:
+      seunome:
+        description: Digite seu nome
+        type: string
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Você selecionou a ${{inputs.seunome}}"

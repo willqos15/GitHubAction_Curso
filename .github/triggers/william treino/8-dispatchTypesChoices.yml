@@ -19,4 +19,4 @@ jobs:
     steps:
       - name: Comentario
         run: |
-          echo "Você selecionou a - ${{inputs.minhastags}}"
+          echo "Você selecionou a ${{inputs.minhastags}}"
