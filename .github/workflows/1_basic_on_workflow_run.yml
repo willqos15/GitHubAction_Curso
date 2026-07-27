@@ -1,0 +1,12 @@
+name: Workflow run Template
+run-name:  Rodando template
+on: 
+  workflow_run:
+    workflows: [Trigger 1]
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: |
+          echo "Workflow que foi trigado"
