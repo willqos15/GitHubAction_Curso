@@ -1,0 +1,10 @@
+name: "Workflow Dispatch"
+run-name: "Rodando - ${{github.event_name}}"
+on: [workflow_dispatch]
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Comentário Dispatch TESTE"
