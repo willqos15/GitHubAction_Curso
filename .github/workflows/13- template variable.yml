@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Exibir variável
-        run: echo "var ${{ vars.var_test }}"
+        run: echo "var= ${{ vars.var_test }}"
