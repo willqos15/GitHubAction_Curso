@@ -7,3 +7,4 @@
 - [Gustavo Eduardo Silva Machado](https://github.com/qagesmachado)
 
 teste2
+- teste pr
