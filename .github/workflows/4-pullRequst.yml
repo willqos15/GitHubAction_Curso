@@ -1,0 +1,10 @@
+name: "Template basico PR"
+run-name: "Rodando no ${{github.event_name}}"
+on: [pull_request]
+jobs:
+  testepull:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Comentário PR TESTE"
