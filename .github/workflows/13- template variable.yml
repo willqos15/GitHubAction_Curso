@@ -5,5 +5,8 @@ jobs:
   exibevar:
     runs-on: ubuntu-latest
     steps:
-      - name: Comentário
-        run: echo "usuario= ${{vars.var_test}} e senha= ${{secrets.password}}"
+      - name: Exibir variável
+        run: echo "${{ vars.var_test }}"
+
+      - name: Exibir secret
+        run: echo "${{ secrets.password }}"
