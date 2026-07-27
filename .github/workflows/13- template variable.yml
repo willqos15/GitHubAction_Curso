@@ -1,4 +1,4 @@
-name: Config variavel e secret
+name: Config variavel
 run-name: ${{ github.actor }} testando 🚀
 on: [push, workflow_dispatch]
 jobs:
@@ -6,7 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Exibir variável
-        run: echo "${{ vars.var_test }}"
-
-      - name: Exibir secret
-        run: echo "${{ secrets.password }}"
+        run: echo "var ${{ vars.var_test }}"
