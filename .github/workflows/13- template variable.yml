@@ -6,4 +6,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Comentário
-        run: echo "usuario= ${{vars.var_test}} senha= ${{secrets.password}}"
+        run: echo "usuario= ${{vars.var_test}} e senha= ${{secrets.password}}"
