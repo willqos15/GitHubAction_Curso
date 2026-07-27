@@ -1,0 +1,13 @@
+name: Push template branch
+run-name: Rodando ${{github.event_name}} branch
+on:
+  push:
+    branches:
+      - main
+jobs:
+  branchok:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: echo "comentário básico de push do workflow"
+

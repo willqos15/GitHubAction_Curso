@@ -1,0 +1,12 @@
+name: Path on Push
+run-name: Rodando ${{github.event_name}} branch Path
+on: 
+  push:
+    paths: 
+      - "**/*.txt"
+jobs:
+  pathok:
+    runs-on: ubuntu-latest
+    steps:
+     - name: Comentário
+       run: echo "comentário básico de push no worklflow"
