@@ -1,0 +1,16 @@
+name: "Workflow Dispatch Boolean"
+run-name: "Rodando - ${{github.event_name}}"
+on:
+  workflow_dispatch:
+    inputs:
+      funcao:
+        description: funcionalidade critica?
+        type: boolean
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentario
+        run: |
+          echo "Você selecionou a ${{inputs.funcao}}"
