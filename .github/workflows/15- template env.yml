@@ -1,0 +1,16 @@
+name: Usando Envs
+run-name: ${{ github.actor }} testando  🚀
+on: [push, workflow_dispatch]
+env: 
+  msg: "Bom dia"
+  var1: ${{vars.var_test}}
+  var2: ${{secrets.password}}
+jobs:
+  exibeenv:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exibir dados
+        run: |
+          echo "$msg"
+          echo "$var1"
+          echo "$var2"
