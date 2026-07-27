@@ -1,0 +1,9 @@
+name: Config variavel
+run-name: ${{ github.actor }} testando 🚀
+on: [push, workflow_dispatch]
+jobs:
+  exibevar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comentário
+        run: echo "${{vars.var_test}}"
